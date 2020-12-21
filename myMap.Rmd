@@ -1,0 +1,20 @@
+---
+title: "LA UNION DE TRES RIOS, CARTAGO COSTAR RICA MAP"
+author: "Roxana Trejos Ramirez"
+date: "12/21/2020"
+output: ioslides_presentation
+---
+
+
+```{r warning=FALSE}
+    library(leaflet)
+```
+
+```{r echo=FALSE}
+    m_map <- leaflet() %>% addTiles()   
+    m_map <- m_map %>% addAwesomeMarkers(lat= 9.906900, 
+                                         lng= -83.984900, 
+                                         label = "Starting point",
+                                  popup="LA UNION DE TRES RIOS, CARTAGO COSTA RICA")
+    m_map
+```
